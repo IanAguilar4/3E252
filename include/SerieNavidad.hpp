@@ -1,6 +1,7 @@
 #pragma once
 #include <Foco.hpp>
 #include <iostream>
+    using namespace std;
 
 class SerieNavidad
 {
@@ -12,21 +13,21 @@ public:
     void Encender(){
         for (int numFoco = 0; numFoco < 10; numFoco++)
         {
-            focos[numFoco].Encender;
+            focos[numFoco].Encender();
         }
         
     }
     void Apagar(){
         for (int numFoco = 0; numFoco < 10; numFoco++)
         {
-            focos[numFoco].Apagar;
+            focos[numFoco].Apagar();
         }
     }
     void ImprimirSerie(){
         for (int numFoco = 0; numFoco < 10; numFoco++)
         {
             cout
-            << focos[numFoco].MostrarEstado;
+            << focos[numFoco].MostrarEstado();
         }
     }
 };
